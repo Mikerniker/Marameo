@@ -5,9 +5,13 @@ body, html {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+
 }
 
+a {
+ text-decoration: none;
+}
 h1 {
 font-size: 1.5rem;
 }
@@ -94,7 +98,6 @@ button {
 
 
 .card-container {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,6 +115,9 @@ button {
   flex-direction: column;
 }
 
+.card-content {
+ padding-left: 1rem;
+}
 /* Web Dev Section */
 
 .webdev-container {
@@ -141,4 +147,39 @@ button {
   font-size: 16px;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+/* Accordion Section */
+
+.accordion-container {
+    background-color: #234b99;
+    display: flex;
+    color: #ffffff;
+    padding: 4rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
