@@ -12,7 +12,7 @@ h1 {
 font-size: 1.5rem;
 }
 
-h2 {
+h2, {
   text-transform: uppercase;
 }
 
@@ -94,7 +94,7 @@ button {
 
 
 .card-container {
-   background-color: #ffffff;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,13 +103,42 @@ button {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
+  background-color: #ffffff;
   width: 40%;
-  height: 65vh;
+  height: 60vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
 
+/* Web Dev Section */
+
+.webdev-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.webdev-section-image {
+    width: 100%;
+    margin-left: 4rem;
+}
+
+.webdev-description {
+    margin-left: 4rem;
+    width: 100%;
+}
+
+.btn {
+  border: 2px solid #234b99;
+  background-color: white;
+  color: #234b99;
+  padding: 14px 28px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
