@@ -1,0 +1,95 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #333333;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+h1 {
+font-size: 1.5rem;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0px;
+}
+
+button {
+  background-color: #234b99;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+/* Navbar */
+
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: #333333;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.nav-right  {
+
+  float: right;
+}
+
+
+
+.container {
+  text-align: left;
+  background-image: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+}
+
+
+.hero-card {
+   background-color: #ffffff;
+   margin: 130px 80px 50px;
+   width: 30%;
+   padding: 1rem;
+   position: relative;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem 1rem 2rem;
+    column-gap: 1em;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  width: 40%;
+  height: 65vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
