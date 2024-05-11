@@ -193,14 +193,17 @@ button {
 /* Accordion Section */
 
 .accordion-container {
-    background-color: #234b99;
-    display: flex;
-    color: #ffffff;
-    padding: 4rem;
-    max-width: 80%;
-    margin: auto;
-
+  background-color: #234b99;
+  color: #ffffff;
+  display: flex;
+  padding: 4rem;
+  max-width: 80%;
+  margin: auto;
 }
+
+.accordion-text {
+  max-width: 80%
+  }
 
 .accordion {
   background-color: #3f63a8;
@@ -212,7 +215,6 @@ button {
   text-align: left;
   outline: none;
   font-size: 15px;
-
 }
 
 
