@@ -137,23 +137,6 @@ button {
 }
 
 .card {
-  padding-bottom: 1rem;
-}
-
-
-.read-story-card {
-   color:  #234b99;
-   text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-.card {
   background-color: #ffffff;
   width: 40%;
   height: 60vh;
@@ -161,17 +144,19 @@ button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 .card-content {
  padding-left: 1rem;
 }
 
-
-
+.read-story-card {
+   color:  #234b99;
+   text-transform: uppercase;
+}
 
 /* Web Dev Section */
-
 
 
 .webdev-container {
