@@ -2,32 +2,44 @@ body, html {
   height: 100%;
   margin: 0;
   color: #333333;
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  /* font-family: "Anton", sans-serif;
+  font-weight: 400; */
   font-style: normal;
   letter-spacing: 1.5px;
 
 }
 
+
+/*  Typography */
+
 a {
  text-decoration: none;
+ color: #333333;
 }
 
-
-h1 {
-font-size: 1.5rem;
+h1, h2, {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0px;
 }
 
-h2, {
-  text-transform: uppercase;
+h3 {
+  font-size: 1.5rem;
 
 }
 
 p {
   font-family: "Arial", sans-serif;
+  font-weight: 100;
   letter-spacing: 0px;
+  line-height: 1.5;
+
 }
 
+/*  Buttons */
 button {
   background-color: #234b99;
   border: none;
@@ -40,6 +52,7 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
 /* Navbar */
 
 .navbar {
@@ -47,7 +60,6 @@ button {
   background-color: #ffffff;
   text-transform: uppercase;
   padding: 1rem;
-
 }
 
 .navbar a {
@@ -57,7 +69,6 @@ button {
   text-decoration: none;
   font-size: 17px;
   align-items: center;
-
 }
 
 .nav-right  {
@@ -65,34 +76,18 @@ button {
   float: right;
 }
 
+/*  Hero container */
 
-
-.container {
-  text-align: left;
+.hero-container {
+  align-items: left;
   background-image: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  height: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: left;
   justify-content: left;
   flex-direction: column;
-}
-
-.card-section {
-  background-color: #234b99;
   text-align: left;
-  height: 100%;
-  align-items: left;
-  justify-content: left;
- margin-top: 0;
-
-
-}
-
-.card-section-header {
-   color: #ffffff;
 }
 
 .hero-card {
@@ -103,19 +98,60 @@ button {
    position: relative;
 }
 
+
 .hero-text {
-padding-top: 3rem;
- display: flex;
+  padding-top: 3rem;
+  display: flex;
   justify-content: space-between;
 }
 
-.card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 2rem 1rem 2rem;
-    column-gap: 1em;
+/* Card Section */
+
+.card-section {
+  background-color: #234b99;
+  height: 100%;
+  margin-top: 0;
 }
+
+.card-section-header {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 85%;
+  padding-top: 2rem;
+}
+
+.card-section-header-text1 {
+  width: 70%;
+}
+
+.card-section-header-readmore {
+   color: #ffffff;
+}
+
+.card-container {
+   column-gap: 1em;
+   display: flex;
+   margin: 1rem 2rem 1rem 2rem;
+}
+
+.card {
+  padding-bottom: 1rem;
+}
+
+
+.read-story-card {
+   color:  #234b99;
+   text-transform: uppercase;
+}
+
+
+
+
+
+
+
 
 .card {
   background-color: #ffffff;
@@ -130,7 +166,13 @@ padding-top: 3rem;
 .card-content {
  padding-left: 1rem;
 }
+
+
+
+
 /* Web Dev Section */
+
+
 
 .webdev-container {
     display: flex;
@@ -170,11 +212,12 @@ padding-top: 3rem;
     padding: 4rem;
     max-width: 80%;
     margin: auto;
+
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #3f63a8;
+  color: #ffffff;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -182,37 +225,28 @@ padding-top: 3rem;
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
 
 footer {
   background-color: #e8e8e8;
+  color: #333333;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  padding: 0px 130px;
 }
 
 .footer-section {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }
+
 
 .footer-links {
   width: 40%;
-  height: 60vh;
+  height: 40vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -225,3 +259,39 @@ ul {
   margin: 0;
   padding: 0;
   }
+
+.footer-social-media li {
+    display: inline;
+    margin-left: 1rem;
+
+}
+
+.footer-section-copyright-text {
+     margin-left: 20rem;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .navbar  {display: none;}
+
+  .card-container {
+    flex-direction: column;
+  }
+  footer, .footer-section, .footer-links  {
+    flex-direction: column;
+  }
+
+
+  .footer-social-media li  {
+  display:  inline-block;
+  }
+
+  body {
+   display: flex;
+   flex-direction: column;
+   }
+
+   .footer-section-copyright-text {
+     margin-left: 0;
+}
+}
