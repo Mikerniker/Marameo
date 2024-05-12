@@ -5,11 +5,8 @@ body, html {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
-  /* font-family: "Anton", sans-serif;
-  font-weight: 400; */
   font-style: normal;
   letter-spacing: 1.5px;
-
 }
 
 
@@ -33,7 +30,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-
 h4, h5 {
   color: #234b99;
 }
@@ -41,7 +37,6 @@ h4, h5 {
 .card-section-h5 {
   color: #ffffff;
 }
-
 
 p {
   font-family: "Arial", sans-serif;
@@ -84,13 +79,16 @@ button {
   text-decoration: none;
 }
 
+.nav-logo {
+  padding: 0;
+}
+
 .nav-right  {
-  align-content: center;
   float: right;
 }
 
 .dropdown {
-  float: right;
+  float: inherit;
   overflow: hidden;
 }
 
@@ -106,14 +104,14 @@ button {
 
 .navbar a:hover, .dropdown:hover .dropdown-news {
   background-color: #E3E8F4;
+  color: #234b99;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #ffffff;;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 205px;
   z-index: 1;
 }
 
@@ -127,7 +125,7 @@ button {
 }
 
 .dropdown-content a:hover {
-  background-color: #E3E8F4;;
+  background-color: #E3E8F4;
   color: #234b99;
 }
 
